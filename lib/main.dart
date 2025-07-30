@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-main(){
+main() {
   runApp(MyApp());
 }
 
@@ -10,11 +10,10 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      theme: ThemeData(
-        primaryColor: Colors.blue,
-      ),
-      home: HomeScreen()
-    );
+        theme: ThemeData(
+          primaryColor: Colors.blue,
+        ),
+        home: HomeScreen());
   }
 }
 
@@ -24,11 +23,17 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: const Color.fromARGB(255, 241, 196, 253),
       appBar: AppBar(
-        backgroundColor: Colors.blue,
+        backgroundColor: const Color.fromARGB(255, 208, 128, 254),
         title: const Text('Sample Project 1'),
-      )
+      ),
+      body: SafeArea(
+          child: Center(
+        child: Text(' Hello World',
+            style: TextStyle(
+                fontSize: 24, color: const Color.fromARGB(255, 255, 255, 255))),
+      )),
     );
   }
 }
