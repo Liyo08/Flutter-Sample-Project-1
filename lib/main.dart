@@ -32,8 +32,9 @@ class HomeScreen extends StatelessWidget {
           child: Center(
         child: Text(' Sample Project 1 ',
             style: TextStyle(
-                fontSize: 24, color: const Color.fromARGB(255, 255, 255, 255))),
+                fontSize: 45, color: const Color.fromARGB(255, 255, 255, 255),fontWeight:FontWeight.w800, fontFamily: 'Roboto',)),
       )),
+     
     );
   }
 }
