@@ -30,7 +30,7 @@ class HomeScreen extends StatelessWidget {
       ),
       body: SafeArea(
           child: Center(
-        child: Text(' Hello World',
+        child: Text(' Sample Project 1 ',
             style: TextStyle(
                 fontSize: 24, color: const Color.fromARGB(255, 255, 255, 255))),
       )),
